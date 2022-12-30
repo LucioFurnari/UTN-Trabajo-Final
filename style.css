@@ -48,3 +48,15 @@ table {
 }
 
 /*---------------------------------------------------------------------*/
+
+:root {
+	--backgroundColor: rgb(24, 28, 48);
+	--creamColor: rgb(230, 221, 196);
+	--colorShadowGreen: rgb(103, 137, 131);
+	--gameCardsBackground: rgb(128,128,128);
+	--textColorBeige: rgb(230, 221, 196);
+	--titleColorGreen: rgb(103, 137, 131);
+	--titleColorWhite: rgb(238, 238, 238);
+	--blackColor: rgb(0,0,0);
+	--grayColor: rgb(128,128,128);
+}
