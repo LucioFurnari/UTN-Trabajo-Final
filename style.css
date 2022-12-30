@@ -48,7 +48,12 @@ table {
 }
 
 /*---------------------------------------------------------------------*/
-
+* {
+	text-decoration: none;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 :root {
 	--backgroundColor: rgb(24, 28, 48);
 	--creamColor: rgb(230, 221, 196);
@@ -59,4 +64,111 @@ table {
 	--titleColorWhite: rgb(238, 238, 238);
 	--blackColor: rgb(0,0,0);
 	--grayColor: rgb(128,128,128);
+}
+/*---------------------------------------------------------------------*/
+nav {
+	background-color: var(--backgroundColor);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+
+nav ul {
+	display: flex;
+}
+nav ul li {
+	padding: 2rem 1rem;
+}
+nav ul li a {
+	background-color: var(--creamColor);
+	padding: 0.7rem ;
+	border-radius: 12px;
+	box-shadow: 2px 3px var(--colorShadowGreen);
+}
+
+/*---------------------------------------------------------------------*/
+
+header {
+	background-image: url(./assets/imagenes/codigo.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	
+	background-repeat: no-repeat;
+	min-height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	color: var(--titleColorWhite);
+	font-size:  64px;
+	text-shadow: 2px 2px var(--grayColor), 6px 6px var(--blackColor);
+}
+
+/*---------------------------------------------------------------------*/
+
+main {
+	background-color: var(--backgroundColor);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+main h2 {
+	color: var(--titleColorGreen);
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-evenly;
+}
+.content-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 5px solid var(--colorShadowGreen);
+	width: 350px;
+	height: 400px;
+	background-color: var(--creamColor);
+	margin: 100px 0;
+}
+.content-card img {
+	width: 100%;
+}
+.content-card a {
+	background-color: var(--backgroundColor);
+	color: var(--creamColor);
+	padding: 0.5rem 2rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	box-shadow: 2px 3px var(--colorShadowGreen);
+}
+
+/*---------------------------------------------------------------------*/
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: var(--colorShadowGreen);
+	color: var(--backgroundColor);
+}
+.footer-logo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 300px;
+}
+.footer-logo img {
+	height: 80px;
+}
+.footer-logo  h3 {
+	width: 150px;
+	text-align: center;
 }
