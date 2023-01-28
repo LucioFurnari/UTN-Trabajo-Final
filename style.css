@@ -64,6 +64,7 @@ body {
 	--titleColorWhite: rgb(238, 238, 238);
 	--blackColor: rgb(0,0,0);
 	--grayColor: rgb(128,128,128);
+	--strokeColor:rgb(76, 163, 255);
 }
 /*---------------------------------------------------------------------*/
 nav {
@@ -188,7 +189,26 @@ main h2 {
 }
 .video-container .timer {
 	display: inline-block;
-	color: white;
+	color: black;
+	font-size: 2rem;
+}
+.video-container button {
+	background-color: rgba(25,25,25,0);
+	border: none;
+}
+.video-start  svg, 
+.video-pause svg {
+	fill: transparent;
+	stroke-width: 2;
+	stroke: var(--strokeColor);
+	width: 32px;
+	height: 32px;
+	transition: stroke-width 0.3s, filter 0.3s;
+}
+.video-start:hover svg,
+.video-pause:hover svg {
+	stroke-width: 3;
+	filter: drop-shadow(3px 5px 2px var(--strokeColor));
 }
 video {
 	width: 70%;
