@@ -177,11 +177,18 @@ main h2 {
 	width: 100%;
 	position: relative;
 }
-.video-container div {
+.video-container .video-controls {
 	position: absolute;
-	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	backdrop-filter: blur(20px);
 	padding: 1rem;
+	width: 50%;
 	bottom: 0;
+}
+.video-container .timer {
+	display: inline-block;
+	color: white;
 }
 video {
 	width: 70%;
