@@ -9,3 +9,8 @@ startButton.addEventListener('click',() => {
 pauseButton.addEventListener('click',() => {
   video.pause();
 })
+
+video.addEventListener('canplaythrough',() => {
+  let vDuration = parseInt(video.duration / 60, 10);
+  console.log(vDuration);
+})
