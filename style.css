@@ -66,7 +66,9 @@ body {
 	--grayColor: rgb(128,128,128);
 	--strokeColor:rgb(76, 163, 255);
 }
-/*---------------------------------------------------------------------*/
+
+/*----------------------------------- HEADER -----------------------------------*/
+
 nav {
 	background-color: var(--backgroundColor);
 	display: flex;
@@ -88,8 +90,6 @@ nav ul li a {
 	color: var(--blackColor);
 }
 
-/*---------------------------------------------------------------------*/
-
 header {
 	background-image: url(./assets/imagenes/codigo.jpg);
 	background-size: cover;
@@ -108,7 +108,7 @@ header h1 {
 	text-align: center;
 }
 
-/*---------------------------------------------------------------------*/
+/*----------------------------------- MAIN -----------------------------------*/
 
 main {
 	background-color: var(--backgroundColor);
@@ -164,6 +164,7 @@ main h2 {
 	color: var(--creamColor);
 	padding: 1.5rem;
 }
+/*----------------------------------- VIDEO -----------------------------------*/
 .video-section {
 	margin: 8rem 0;
 }
@@ -218,7 +219,7 @@ video {
 	display: flex;
 	justify-content: center;
 }
-/*---------------------------------------------------------------------*/
+/*----------------------------------- FOOTER -----------------------------------*/
 
 footer {
 	display: flex;
