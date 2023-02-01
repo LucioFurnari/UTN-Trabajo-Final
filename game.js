@@ -18,14 +18,16 @@ function drop(event,elem) {
     const img = document.createElement("img")
     elem.append(img)
     elem.firstElementChild.src = src;
+    images.forEach((img) => {
+      if(img.src == src) {
+        img.classList.add("hide");
+      }
+    })
   }
 }
 
 images.forEach((elem) => {
   elem.addEventListener("dragstart",drag);
-  elem.addEventListener("dragend",(event) => {
-    event.target.classList.add("hide");
-  })
 })
 
 emptyCards.forEach((elem) => {
