@@ -1,9 +1,8 @@
 const emptyCards = document.querySelectorAll(".game-cards .card");
 const images = document.querySelectorAll(".images-container img")
 
-console.log(emptyCards);
-function allowDrop(ev) {
-  ev.preventDefault();
+function allowDrop(event) {
+  event.preventDefault();
 }
 function drag(event) {
   let src = event.target.src;
@@ -23,6 +22,9 @@ function drop(event,elem) {
 
 images.forEach((elem) => {
   elem.addEventListener("dragstart",drag);
+  elem.addEventListener("dragend",(event) => {
+    event.target.classList.add("hide");
+  })
 })
 emptyCards.forEach((elem) => {
   elem.addEventListener("drop",(event) =>{
