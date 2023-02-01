@@ -1,7 +1,7 @@
 const video = document.querySelector("video");
 const startButton = document.querySelector(".video-start");
 const pauseButton = document.querySelector(".video-pause");
-const videoTimer = document.querySelector(".timer")
+const videoTimer = document.querySelector(".timer");
 
 startButton.addEventListener('click',() => {
   video.play();
