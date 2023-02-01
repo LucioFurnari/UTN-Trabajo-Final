@@ -1,5 +1,6 @@
 const emptyCards = document.querySelectorAll(".game-cards .card");
-const images = document.querySelectorAll(".images-container img")
+const images = document.querySelectorAll(".images-container img");
+const restartButton = document.querySelector(".restart-button");
 
 function allowDrop(event) {
   event.preventDefault();
@@ -26,9 +27,14 @@ images.forEach((elem) => {
     event.target.classList.add("hide");
   })
 })
+
 emptyCards.forEach((elem) => {
   elem.addEventListener("drop",(event) =>{
     drop(event,elem)
   })
   elem.addEventListener("dragover",allowDrop);
+})
+
+restartButton.addEventListener("click",() => {
+  window.location.reload();
 })
