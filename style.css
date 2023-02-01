@@ -137,16 +137,26 @@ main h2 {
 	display: flex;
 	justify-content: space-evenly;
 }
+.game-cards {
+	display: flex;
+	justify-content: center;
+}
 .content-card {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
 	border: 5px solid var(--colorShadowGreen);
 	width: 350px;
 	height: 400px;
 	background-color: var(--creamColor);
 	margin: 100px 0;
+}
+.card {
+	width: 275px;
+	height: 400px;
+	background-color: var(--grayColor);
+	border: 2px solid var(--blackColor);
 }
 .content-card img {
 	width: 100%;
