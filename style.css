@@ -64,6 +64,7 @@ body {
 	--titleColorWhite: rgb(238, 238, 238);
 	--blackColor: rgb(0,0,0);
 	--grayColor: rgb(128,128,128);
+	--darkGrayColor: rgb(52,52,52);
 	--strokeColor:rgb(76, 163, 255);
 }
 
@@ -182,6 +183,9 @@ main .restart-button:active {
 	background-color: var(--grayColor);
 	border: 2px solid var(--blackColor);
 	text-align: center;
+}
+.card:hover {
+	background-color: var(--darkGrayColor);
 }
 .card img {
 	width: 100%;
