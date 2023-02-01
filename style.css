@@ -92,11 +92,11 @@ nav ul li a {
 
 nav #mon1,
 nav #tec1 {
-	animation: logoPartOne ease-in 5s;
+	animation: logoPartOne ease-in 3s;
 }
 nav #mon2,
 nav #tec2{
-	animation: logoPartTwo ease-in 5s;
+	animation: logoPartTwo ease-in 3s;
 }
 
 header {
