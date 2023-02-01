@@ -90,6 +90,15 @@ nav ul li a {
 	color: var(--blackColor);
 }
 
+nav #mon1,
+nav #tec1 {
+	animation: logoPartOne ease-in 5s;
+}
+nav #mon2,
+nav #tec2{
+	animation: logoPartTwo ease-in 5s;
+}
+
 header {
 	background-image: url(./assets/imagenes/codigo.jpg);
 	background-size: cover;
@@ -241,4 +250,53 @@ footer {
 .footer-logo  h3 {
 	width: 150px;
 	text-align: center;
+}
+
+
+/*----------------------------------- ANIMATION -----------------------------------*/
+
+@keyframes logoPartOne {
+	0%{
+		transform: translate(0,-10px);
+		opacity: 0;
+	}
+	20% {
+		transform: translate(0,-10px);
+		opacity: 0;
+	}
+	30% {
+		transform: translate(0,0px);
+		opacity: 1;
+	}
+	90% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+}
+
+@keyframes logoPartTwo {
+	0% {
+		transform: translate(0,-10px);
+		opacity: 0;
+	}
+	30% {
+		transform: translate(0,-10px);
+		opacity: 0;
+	}
+	40% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	90% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0,0);
+		opacity: 1;
+	}
 }
