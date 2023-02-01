@@ -89,7 +89,12 @@ nav ul li a {
 	box-shadow: 2px 3px var(--colorShadowGreen);
 	color: var(--blackColor);
 }
-
+nav ul li:active {
+	transform: translate(2px, 3px);
+}
+nav ul li a:active{
+	box-shadow: 0 0;
+}
 nav #mon1,
 nav #tec1 {
 	animation: logoPartOne ease-in 3s;
@@ -125,14 +130,28 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	padding: 2rem;
 }
 main h2 {
 	color: var(--titleColorGreen);
 	text-align: center;
 	font-size: 40px;
 	font-weight: 600;
+	margin-bottom: 2rem;
 }
-
+main .restart-button {
+	margin: 2rem auto;
+	padding: 0.7rem 6rem ;
+	border-radius: 12px;
+	border: none;
+	background-color: var(--creamColor);
+	box-shadow: 2px 3px var(--colorShadowGreen);
+	color: var(--blackColor);
+}
+main .restart-button:active {
+	transform: translate(2px, 3px);
+	box-shadow: 0 0;
+}
 .card-container {
 	display: flex;
 	justify-content: space-evenly;
@@ -140,6 +159,7 @@ main h2 {
 .game-cards {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 2rem;
 }
 .content-card {
 	display: flex;
@@ -167,6 +187,9 @@ main h2 {
 	width: 100%;
 	height: 100%;
 }
+.hide {
+	display: none;
+}
 .content-card img {
 	width: 100%;
 }
@@ -174,9 +197,14 @@ main h2 {
 	background-color: var(--backgroundColor);
 	color: var(--creamColor);
 	padding: 0.5rem 2rem;
+	border: none;
 	border-radius: 10px;
 	margin-bottom: 1rem;
 	box-shadow: 2px 3px var(--colorShadowGreen);
+}
+.content-card a:active {
+	box-shadow: 0 0;
+	transform: translate(2px, 3px);
 }
 .grid-container {
 	display: grid;
