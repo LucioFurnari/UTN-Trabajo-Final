@@ -13,20 +13,19 @@ function drag(event) {
 
 function drop(event,elem) {
   let src = event.dataTransfer.getData("text");
-  console.log(src);
-  elem.removeChild(elem.firstElementChild);
-  const img = document.createElement("img")
-  elem.append(img)
-  elem.firstElementChild.src = src;
+  if(elem.firstElementChild.tagName != "IMG"){
+    elem.removeChild(elem.firstElementChild);
+    const img = document.createElement("img")
+    elem.append(img)
+    elem.firstElementChild.src = src;
+  }
 }
 
 images.forEach((elem) => {
   elem.addEventListener("dragstart",drag);
 })
 emptyCards.forEach((elem) => {
-  console.log(elem);
   elem.addEventListener("drop",(event) =>{
-  
     drop(event,elem)
   })
   elem.addEventListener("dragover",allowDrop);
